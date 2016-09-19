@@ -1,0 +1,307 @@
+
+@import url(colors.css);
+
+/* * * * */
+/* Body  */
+/* * * * */
+
+body {
+	background: white none
+	margin-left: 20px;
+	margin-right: 50px;
+}
+
+/* * * * * * */
+/*  Navibars */
+/* * * * * * */
+
+div.topnavi {
+	width: 100%;
+	border-bottom: solid black 2px;
+}
+
+div.botnavi {
+	width: 100%;
+	border-top: solid black 2px;
+	margin-top: 1em;
+}
+
+div.topnavi .contents, div.topnavi .right,
+div.botnavi .contents, div.botnavi .right {float: right;}
+
+hr.navi {
+	display: none;
+}
+
+a.subsections .m {
+	display: none;
+}
+
+div.subsections {
+	border: solid thin black;
+	margin-top: 1em;
+}
+
+@media print {
+	.topnavi {display:none;}
+	.botnavi {display:none;}
+	span.m img.m {display:none;}
+}
+
+/* * * * * * */
+/* Headings  */
+/* * * * * * */
+
+h1 {
+	margin-top:1.5em;
+	margin-bottom:1em;
+	page-break-after:avoid;
+	font-size:1.7em;
+	font-weight:bold;
+	padding: 0.2em;
+	width: 100%;
+}
+
+h1.MsoTitle {
+	margin-top:3em;
+	margin-bottom:1.5em;
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+	border-bottom: 2px solid black;
+}
+
+h2, h3 {
+	margin-top:1em;
+	margin-bottom:.5em;
+	page-break-after:avoid;
+	font-size:1.5em;
+	font-weight:bold;
+	color: blue;
+}
+
+h4, h5, h6, h6.SubHeading, p.SubHeading {
+	margin-top:.5em;
+	margin-bottom:.5em;
+	page-break-after:avoid;
+	font-size:1.3em;
+	font-weight:bold;
+}
+
+
+/* * * * * * * * * */
+/* Text paragraphs */
+/* * * * * * * * * */
+
+p {
+	margin-top:.3em;
+	margin-bottom:.3em;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+p.MsoNormal, p.MsoToc1 {
+	margin:0;
+}
+
+p.MsoToc2 {
+	margin-left:2em;
+}
+
+p.MsoToc3 {
+	margin-left:4em;
+}
+
+p.MsoToc4 {
+	margin-left:6em;
+}
+
+p.MsoToc5 {
+	margin-left:8em;
+}
+
+p.MsoToc6 {
+	margin-left:10em;
+}
+
+caption, p.FigureCaption {
+	page-break-after: avoid;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 120%;
+	color: #0070c0;
+	
+}
+
+p.MsoBodyTextIndent {
+	margin-left:3em;
+	margin-right:1.5em;
+}
+
+p.MsoBodyTextIndent2 {
+	margin-left:6em;
+	margin-right:1.5em;
+}
+
+pre.Codeblock {
+	margin-left:10%;
+	margin-right:5%;
+	white-space: pre;
+	font-size:90%;
+	font-family: "Courier New", monospace;
+}
+
+p.TableHeader {
+	text-align:center;
+	font-weight:bold;
+}
+
+p.EqNumber {
+	text-align: right;
+}
+
+p.xxx {
+      background: red none;
+}
+
+p.ok {
+     background: green none;
+}
+
+/* * * * * */
+/* Tables  */
+/* * * * * */
+
+table {
+    border: 1px solid #0070d0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.LogoTable, table.BottomTable, table.LogoTable td, table.BottomTable td {
+	border-width: 0;
+}
+
+table.BottomTable {
+	border-top: 2px solid black;
+}
+
+td.right {
+	text-align: right;
+}
+
+td {
+    border: 1px solid #0070d0;
+	padding: 0.2em;
+	vertical-align: top;
+}
+
+col.first {
+	width: 100px;
+}
+
+
+/* * * * */
+/* Links */
+/* * * * */
+
+a:visited {
+	text-decoration: none;
+}
+
+a img {border: 0;}
+
+a.doc:link, a.doc:visited, a.guide:link, a.guide:visited {
+	font-weight: bold;
+}
+
+h1 a:link, h1 a:visited {
+	background: transparent none;
+}
+
+sub, sup {
+	text-decoration: none;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 70%;
+}
+
+
+/* * * * * * * * * * */
+/* Text-level markup */
+/* * * * * * * * * * */
+
+img {
+	vertical-align: middle;
+}
+
+
+i.eq, span.File, span.dataflow, span.Term {
+	font-style:italic;
+	text_decoration: none;
+}
+
+
+em {
+	font-weight: bold;
+}
+
+span.storage {
+	font-variant: small-caps;
+	border: thin solid black;
+	border-left-width: 0;
+	border-right-width: 0;
+	text-decoration: none;
+}
+
+span.transformation {
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+kbd {
+	font-weight:bold;
+	font-size:90%;
+}
+
+span.Matrix-Vector, b.Matrix-Vector, b.mat {
+	font-weight:bold;
+}
+
+code {
+	font-size: 90%
+	font-weight:normal;
+}
+
+span.const {
+	font-family: "Courier New", monospace;
+	font-size: 90%;
+}
+
+span.Attribute {
+	font-family: "Courier New", monospace;
+	font-size: 90%;
+	font-weight:normal
+}
+
+span.Class {
+	font-family: "Courier New", monospace;
+	font-size: 90%;
+	font-weight:normal
+}
+
+span.greek, span.greek sub, span.greek sup, sub span.greek, sup span.greek {
+	font-family:Symbol;
+	text-decoration: none;
+}
+
+h1 tt, h2 tt, h3 tt, h4 tt, h5 tt, h6 tt,
+h1 code, h2 code, h3 code, h4 code, h5 code, h6 code,
+h2 span.Class, h3 span.Class, h4 span.Class {
+	font-weight:bold;
+}
+
+span.SRS2 {
+	border: thin solid black;
+}
