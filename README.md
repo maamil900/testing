@@ -1,7 +1,7 @@
 This is my testing repository.
 one one
 two
-three
+three: origin update
 four
 five
 six
